@@ -33,7 +33,6 @@ ul,ol{
 
 body{
     font-family: "Roboto" , sans-serif;
-    width: 1440px;
 }
 
 :root{
@@ -347,6 +346,36 @@ line-height: calc(24/16);
     float: left;
 }
 
+.footer-link :focus{
+    color:var(--iris-color);
+
+}
+
+.span-two{
+    color: var(--cloud-color);
+}
+
+.footer-text{
+    color: var(--flower-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24/16);
+    width: 264px;
+    margin-top: 16px;
+}
+
+.footer{
+    background-color: var(--navy-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 310px;
+}
+
+.logo-cont{
+    display: block;
+    float: left;
+}
+
 .footer-link{
     color:var(--iris-color);
     font-family: 'Raleway';
@@ -419,16 +448,13 @@ margin-bottom: 16px;
     height: 40px;
     min-width: 264px;
     color: var(--white-color);
-}
-
-.foot-input::placeholder{
     padding-left: 16px;
 }
 
 .sub-btn{
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
     width: 165px;
 height: 40px;
 font-weight: 500;
@@ -440,23 +466,21 @@ border-color: var(--iris-color);
 color: var(--white-color);
 }
 
-.sub-btn span{
-    padding-left: 24px;
-}
+
 
 .foot-sube{
     float: left;
     margin-left: 80px;
 }
 
-.foot-btn-cont{
-    float: left;
-    padding-top: 40px;
-    margin-left: 24px;
-}   
+.foot-int-btn{
+    display: flex;
+    gap: 24px;
+}
 
 .sub-svg{
     fill: var(--white-color);
+    margin-left: 16px;
 }
 
 .visually-hidden {

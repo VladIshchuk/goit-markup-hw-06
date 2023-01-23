@@ -280,18 +280,20 @@
 </div>
     
         <div class="foot-sube">
-        <h3 class="sub-text">Subscribe</h3>
+        <p class="sub-text">Subscribe</p>
+        <div class="foot-int-btn">
         <input type="email" class="foot-input" name="user-mail" placeholder="E-mail">
 
-    </div>
-    <div class="foot-btn-cont"> 
+    
     <button type="submit" class="sub-btn">
-        <span>Subscribe</span>
+         Subscribe
         <svg class="sub-svg" width="24px" height="24px">
             <use href="./images/symbol-defs.svg#icon-Frame" class="sub-use"></use>
         </svg>
     </button>
+</div>
     </div> 
+
     
 
 </div>
@@ -305,15 +307,15 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form class="modal-form">
-            <div class="modal-cont">
-            <label for="1" class="modal-label ">Name</label>
+            <div class="modal-cont modal-cont-one">
+            <label for="name" class="modal-label ">Name</label>
             <div class="input-wrap">
             <input 
             type="text" 
             class="modal-input top-input" 
             name="user-name"
             required
-            id="1">
+            id="name">
             <svg class="input-svg" width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#icon-person-black" class="input-use"></use>
             </svg>
@@ -321,27 +323,27 @@
         </div>
 
         <div class="modal-cont">
-            <label for="2" class="modal-label">Phone</label>
+            <label for="tell" class="modal-label">Phone</label>
             <div class="input-wrap">
             <input 
             type="tel" 
             class="modal-input"
             name="user-email"
             required
-            id="2">
+            id="tell">
             <svg class="input-svg" width="18px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-phone-black" class="input-use"></use>
             </svg>
         </div>
         </div>
             
-        <div class="modal-cont">
-            <label for="3" class="modal-label">Email</label>
+        <div class="modal-cont mail-modal-cont">
+            <label for="maill" class="modal-label">Email</label>
             <div class="input-wrap">
             <input type="email" 
             class="modal-input" 
             name="user-tel"
-            id="3">
+            id="maill">
             <svg class="input-svg" width="18px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-email-black" class="input-use"></use>
             </svg>
@@ -349,8 +351,8 @@
         </div>
             
         <div class="modal-cont">
-            <label for="4" class="modal-label">Comment</label>
-            <textarea name="" id="" class="modal-area" placeholder="Text input" id="4"></textarea>
+            <label for="comment" class="modal-label">Comment</label>
+            <textarea name="" id="" class="modal-area" placeholder="Text input" id="comment"></textarea>
         </div>
         <div class="check-cont">
         <input type="checkbox" name="privacy" id="privacy" value="true" class="input-check visually-hidden">
@@ -360,8 +362,7 @@
                     <use href="./images/symbol-defs.svg#icon-Vector"></use>
                 </svg>
             </span>
-            I accept the terms and conditions of the 
-            <a href="" class="privacy-link">Privacy Policy</a>
+            I accept the terms and conditions of the<a href="" class="privacy-link">Privacy Policy</a>
         </label>
     </div>
             

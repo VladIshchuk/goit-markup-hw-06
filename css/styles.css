@@ -41,7 +41,6 @@ ul,ol{
 
 body{
     font-family: "Roboto" , sans-serif;
-    width: 1440px;
 }
 
 .header-navi{
@@ -162,6 +161,8 @@ text-align: center;
     background-color: var(--navy-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero{    
@@ -527,16 +528,13 @@ margin-bottom: 16px;
     height: 40px;
     min-width: 264px;
     color: var(--white-color);
-}
-
-.foot-input::placeholder{
     padding-left: 16px;
 }
 
 .sub-btn{
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
     width: 165px;
 height: 40px;
 font-weight: 500;
@@ -548,23 +546,21 @@ border-color: var(--iris-color);
 color: var(--white-color);
 }
 
-.sub-btn span{
-    padding-left: 24px;
-}
+
 
 .foot-sube{
     float: left;
     margin-left: 80px;
 }
 
-.foot-btn-cont{
-    float: left;
-    padding-top: 40px;
-    margin-left: 24px;
-}   
+.foot-int-btn{
+    display: flex;
+    gap: 24px;
+}
 
 .sub-svg{
     fill: var(--white-color);
+    margin-left: 16px;
 }
 
 .visually-hidden {
@@ -593,19 +589,21 @@ color: var(--white-color);
 .modal {
     position: absolute;
     width: 408px;
-    min-height: 576px;
     background-color: var(--modal-color);
     border-radius: 4px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) skew(360deg);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 24px;
+    padding: 72px 24px 24px;
 }
 
 .backdrop.is-hidden .modal{
     transform: translate(-50%, -50%) scale(0) skew(90deg); 
 
+}
+.modal-form .modal-cont-one{
+    margin: 0;
 }
 
 .modal-close {
@@ -634,7 +632,6 @@ color: var(--white-color);
 }
 
 .modal-text{
-padding-top: 48px;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
@@ -650,7 +647,6 @@ margin-bottom: 6px;
     background-color: transparent;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-top: 4px;
     padding-left: 38px;
 }
 
@@ -679,6 +675,10 @@ margin-bottom: 6px;
     
 }
 
+.modal-cont{
+    margin-top: 8px;
+}
+
 .modal-area::placeholder{
     font-family: 'Roboto';
     font-style: normal;
@@ -702,8 +702,6 @@ margin-bottom: 6px;
     background-color: var(--iris-color);
     color: var(--white-color);
     margin-top: 24px;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
     margin: 0 auto;
     display: block;
@@ -716,8 +714,8 @@ margin-bottom: 6px;
     color: var(--light-slate);
 }
 
-.modal-cont{
-    margin-top: 8px;
+.modal-form .mail-modal-cont{
+    margin-bottom: 8px;    
 }
 
 .input-svg{
@@ -729,6 +727,7 @@ margin-bottom: 6px;
 
 .input-wrap{
     position: relative;
+    margin-top: 4px;
 }
 
 .privacy-label{
